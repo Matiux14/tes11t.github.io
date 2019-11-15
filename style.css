@@ -1,0 +1,14 @@
+/* Code tidied up by ScrapBook */
+.button { width: 100%; background-color: rgb(29, 185, 84); border: medium none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; font: 700 16px Helvetica,Arial,sans-serif; display: inline-block; border-radius: 50px; transition-duration: 0.4s; }
+.button:hover { background-color: rgb(42, 220, 105); color: white; }
+.button2 { width: 100%; background-color: rgb(59, 89, 152); border: medium none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; font: 700 16px Helvetica,Arial,sans-serif; display: inline-block; border-radius: 50px; transition-duration: 0.4s; }
+.button2:hover { background-color: rgb(59, 89, 152); color: white; }
+input[type="text"] { width: 100%; padding: 12px 20px; margin: 8px 0px; box-sizing: border-box; border: 1px solid rgb(186, 182, 182); border-radius: 2px; }
+input[type="email"] { width: 100%; padding: 12px 20px; margin: 8px 0px; box-sizing: border-box; border: 1px solid rgb(186, 182, 182); border-radius: 2px; }
+input[type="password"] { width: 100%; padding: 12px 20px; margin: 8px 0px; box-sizing: border-box; border: 1px solid rgb(186, 182, 182); border-radius: 2px; }
+form label { position: relative; display: block; }
+form label input { font: 18px Helvetica,Arial,sans-serif; box-sizing: border-box; display: block; border: 300px none; padding: 20px; width: 300px; margin-bottom: 20px; outline: medium none; transition: all 0.2s ease-in-out 0s; }
+form label input:focus, form label input.populated { padding-top: 28px; padding-bottom: 12px; }
+form label input:focus + span, form label input.populated + span { opacity: 1; top: 10px; }
+form label span { color: rgb(186, 182, 182); font: 13px Helvetica,Arial,sans-serif; position: absolute; top: 0px; left: 20px; opacity: 0; transition: all 0.2s ease-in-out 0s; }
+.custom-select { width: 100%; padding: 12px 20px; font: 18px Helvetica,Arial,sans-serif; color: rgb(153, 153, 153); margin: 8px 0px; box-sizing: border-box; border: 1px solid rgb(186, 182, 182); border-radius: 2px; }

